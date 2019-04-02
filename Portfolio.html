@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dan Baldino's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+    <!--    Eventually double check if all links are necessary      -->
+    <!-- HOSTED -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link rel="stylesheet" type="text/css" href="ostrich-sans-master\webfonts\ostrich-sans.css" />
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/s/4.0.0/jquery.s.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/animation.js"></script>
+    <script>
+        $("#pt div").addClass("load");
+    </script>
+</head>
+<body>
+    <div class="overflow-wrap">
+        <!--    add timeline  -->
+        <!--    Dont touch besides BG color and heading     -->
+        <!-- HOME -->
+        <section id="home" class="flex height-fix">
+            <i class="fa fa-angle-right"></i>
+            <div id="typedtext">
+                &nbsp;
+            </div>
+            <div id="pt"> 
+                 <div class="sectionOneBG">
+                <i class="fa fa-vector-square"></i>
+                <div class="headname">
+                    <h1 class="headstart">DAN'S</h1><br />
+                    <h1 style="color: #808080;">
+                        PORTFOLIO
+                    </h1>
+                </div>
+               <div class="description flex">
+                <div class="animated slide-in-left">
+                    <h8>
+                        WEB DESIGNER
+                    </h8>
+                </div>
+                <div class="animated slide-in-right">
+                    <h8>
+                        FRONT-END DEVELOPER
+                    </h8>
+                </div>
+                <div>
+                    <div class="animated fade-in button page-link" dest="about" style="margin-top: 5px">
+                        View.My.Work
+                        <span class="fa fa-arrow-right"></span>
+                    </div>
+                </div>
+            </div>
+                     </div>
+            </div>
+            <nav class="flex">
+                <div class="link-wrap">
+                    <div class="page-link active" dest="home"><b>HOME</b></div>
+                    <div class="page-link" dest="about"><b>ABOUT</b></div>
+                    <div class="page-link" dest="projects"><b>PROJECTS</b></div>
+                    <div class="page-link" dest="contact"><b>CONTACT</b></div>
+                </div>
+                <i class="fa fa-stream" style="position:absolute; color:#05B8CC">
+                    <i class="animated fade-in fa fa-circle" style="font-size:25pt;animation-delay:1s;color: coral;position: absolute;top:-3px;left:20px;"></i>
+                </i>
+            </nav>
+        </section>
+        <!--     Main Priority - fix asap    -->
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="flex height-fix">
+                <div class="animated slide-in-left">
+                    <div class="header ">ABOUT ME</div>
+                </div>
+                <div class="animated slide-in-right">
+                    <div class="header-bar "></div>
+                </div>
+                <div class="flex row label-wrap">
+                    <div class="flex row-gt-sm animated slide-in-left">
+                        <div class="flex bullet-wrap">
+                            <div class="">
+                                <div class="label bold">Background</div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="flex bullet-wrap">
+                            <div class="">
+                                <div class="label bold">Education</div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex row-gt-sm animated slide-in-right">
+                        <div class="flex bullet-wrap">
+                            <div class="">
+                                <div class="label bold">Interests</div>
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <div class="flex bullet-wrap ">
+                            <div class="">
+                                <div class="label bold">Hobbies</div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-wrapper flex row-gt-sm">
+                    <div class="flex flex-50-gt-sm  animated slide-in-left" data-animation="slide-in-left">
+                        <img src="" class="me">
+                        <div class="label bold"></div>
+                    </div>
+
+                    <div class="flex flex-50-gt-sm  bars-wrap animated slide-in-right" data-animation="slide-in-right">
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:75%">
+                                <div class="tag bold flex">CSS</div>
+                            </div>
+                            <span>75%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:85%">
+                                <div class="tag bold flex">HTML</div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:80%">
+                                <div class="tag bold flex">JavaScript</div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:70%">
+                                <div class="tag bold flex">Bootstrap</div>
+                            </div>
+                            <span>60%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:60%">
+                                <div class="tag bold flex">UI Design</div>
+                            </div>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:70%">
+                                <div class="tag bold flex">Unix</div>
+                            </div>
+                            <span>60%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:90%">
+                                <div class="tag bold flex">C++</div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:80%">
+                                <div class="tag bold flex">Java</div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    Change text color/image and opacity for better readibility   -->
+        <!--    For a better section: finish game and mock site  -->
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="flex height-fix">
+                <div class="header  animated slide-in-left" data-animation="slide-in-left">PROJECTS</div>
+                <div class="header-bar animated slide-in-right" data-animation="slide-in-right" data-delay=".5s"></div>
+                <div class="filter-wrap">
+                    <div class="flex row">
+                        <div class="filter" data-filter="all">ALL</div>
+                        <div class="filter" data-filter=".websites">WEBSITES</div>
+                        <div class="filter" data-filter=".cplus">C++</div>
+                        <div class="filter" data-filter=".java">JAVA</div>
+                        <div class="filter" data-filter=".js">JAVASCRIPT</div>
+                    </div>
+                    <div class="float-bar">
+                        <div class="flex row">
+                            <div class="filter" data-filter="all">ALL</div>
+                            <div class="filter" data-filter=".websites">WEBSITES</div>
+                            <div class="filter" data-filter=".cplus">C++</div>
+                            <div class="filter" data-filter=".java">JAVA</div>
+                            <div class="filter" data-filter=".js">JAVASCRIPT</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gallery" class="container flex row wrap ">
+                    <div class="cardPar" style="width:min-content">
+                        <div class="mix websites" data-my-order="1">
+                            <div>
+                                <div class="card" style="background-image:url('img/somebar.png');background-size: contain;background-position: center;background-repeat: no-repeat;"></div>
+                                <div class="text">
+                                    <div class="bold">Somerdale Bar's Website</div>
+                                    <span class="highlight">WEBSITES</span>
+                                </div>
+                                <div class="button" id="websites"><a href="https://www.somerdalebar.com">LEARN MORE</a></div>
+                            </div>
+                        </div>
+                        <div class="mix java" data-my-order="1">
+                            <div>
+                                <div class="card" style="background-image:url('img/nfctags.jpg'); background-size: cover;"></div>
+                                <div class="text">
+                                    <div class="bold">NFC Tags Implementation</div>
+                                    <span class="highlight">Java</span>
+                                </div>
+                                <div class="button" id="nfc">LEARN MORE</div>
+                            </div>
+                        </div>
+                        <div class="mix cplus" data-my-order="1">
+                            <div>
+                                <div class="card" style="background-image:url('img/bookstore.jpg'); background-size: cover;"></div>
+                                <div class="text">
+                                    <div class="bold">Ecommerce Bookstore</div>
+                                    <span class="highlight">UML & C++</span>
+                                </div>
+                                <div class="button" id="cbook">LEARN MORE</div>
+                            </div>
+                        </div>
+                        <div class="mix js" data-my-order="1">
+                            <div>
+                                <div class="card" style="background-image:url('img/calc.png'); background-size: cover;"></div>
+                                <div class="text">
+                                    <div class="bold">BASIC CALCULATOR</div>
+                                    <span class="highlight">JavaScript</span>
+                                </div>
+                                <div class="button" id="calc">LEARN MORE</div>
+                            </div>
+                        </div>
+                        <div class="mix java" data-my-order="1">
+                            <div>
+                                <div class="card" style="background-image:url('img/grades.png'); background-size: cover;"></div>
+                                <div class="text">
+                                    <div class="bold">GRADE SYSTEM</div>
+                                    <span class="highlight">Java</span>
+                                </div>
+                                <div class="button" id="grade">LEARN MORE</div>
+                            </div>
+                        </div>
+
+                        <div class="mix cplus" data-my-order="1">
+                            <div>
+                                <div class="card" style="background-image:url('img/queue.png'); background-size: cover;"></div>
+                                <div class="text">
+                                    <div class="bold">QUEUE</div>
+                                    <span class="highlight">Priority Queue</span>
+                                </div>
+                                <div class="button" id="queue">LEARN MORE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  ehhh?  -->
+        <!-- CONTACT -->
+        <section id="contact" class="container flex">
+            <div class="header animated slide-in-left">CONTACT</div>
+            <div class="header-bar animated slide-in-left"></div>
+            <div class="highlight animated slide-in-right">
+                <p>
+                    Any questions or want to work together?<br>
+                    Feel free to contact me<br>I will get back to you within 24 hours.
+                </p>
+            </div>
+            <div class="icon-wrap flex row">
+                <div class="flex icon">
+                    <a href="https://www.linkedin.com/in/danieltbaldino/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="flex icon">
+                    <a href="https://www.facebook.com/dan.baldino.1">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <form class="animated slide-in-right" id="contact-form">
+                <input placeholder="Name" type="text" name="name" required>
+                <input placeholder="Enter email" type="email" name="email" required>
+                <textarea placeholder="Your Message" type="text" name="message"></textarea>
+                <div id="success">
+                    <div>Your message was sent successfully. Thanks!<span id="close" class="fa fa-close"></span></div>
+                </div>
+                <input class="button" type="submit" id="submit" value=SUBMIT>
+            </form>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <i class="top-button fa fa-arrow-up page-link" dest="home"></i>
+
+            <div class="info-box">
+                <div class="footnote">DAN BALDINO <span class="highlight">&copy;2019</span></div>
+            </div>
+        </footer>
+        <div id="preload">
+            <img src="img/create.jpeg" />
+            <img src="img/birdPole.jpg" />
+            <img src="img/bookstore.jpg" />
+            <img src="img/grades.png" />
+            <img src="img/nfctags.jpg" />
+            <img src="img/queue.png" />
+            <img src="img/calc.png" />
+        </div>
+    </div>
+    <script>
+        // set up text to print, each item in array is new line
+        var aText = new Array(
+            "Welcome to my Portfolio. Enjoy. "
+        );
+        var iSpeed = 100; // time delay of print out
+        var iIndex = 0; // start printing array at this posision
+        var iArrLength = aText[0].length; // the length of the text array
+        var iScrollAt = 20; // start scrolling up at this many lines
+
+        var iTextPos = 0; // initialise text position
+        var sContents = ''; // initialise contents variable
+        var iRow; // initialise current row
+
+        function typewriter() {
+            sContents = ' ';
+            iRow = Math.max(0, iIndex - iScrollAt);
+            var destination = document.getElementById("typedtext");
+
+            while (iRow < iIndex) {
+                sContents += aText[iRow++] + '<br />';
+            }
+            destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+            if (iTextPos++ == iArrLength) {
+                iTextPos = 0;
+                iIndex++;
+                if (iIndex != aText.length) {
+                    iArrLength = aText[iIndex].length;
+                    setTimeout("typewriter()", 500);
+                }
+            } else {
+                setTimeout("typewriter()", iSpeed);
+            }
+        }
+
+
+        typewriter();
+    </script>
+    <script>
+        var btn = $('.top-button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    </script>
+</body>
+</html>
+
