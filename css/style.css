@@ -1,0 +1,643 @@
+/* Float Shadow */
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+
+*{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+         -webkit-transition: .25s ease-in;
+            transition: .25s ease-in;
+}
+
+html{
+   overflow-x:hidden;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 251, 232, 1);
+}
+
+footer{
+    background-color: rgb(2, 111, 153);
+}
+
+footer a{
+	color:#f7f7f0 !important;
+}
+
+footer a:hover{
+    color: black !important;
+    transition: all .3s ease-in;
+}
+
+header{
+    height: 6em;
+    padding:0;
+
+}
+
+section{
+    height: auto;
+}
+
+.align-flex-end{
+   align-items: flex-end;
+}
+
+.animated {
+    opacity: 0;
+    position: relative;
+}
+
+.btn:hover{
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.5) !important;
+}
+
+.home-blog-btn{
+    background-color: #2c93ee !important;
+    color: white;
+}
+
+.border-between > [class*='col-']:before {
+    background: rgba(39, 93, 140, 1);
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    width: 1px;
+    top: 0;
+}
+
+.border-plus-radius{
+    border: 1px solid black;
+    border-radius: .25rem;
+}
+.invert { filter: invert(100%); }
+
+.card{
+    margin: 0 5px 5px 0 !important;
+    border-radius: .25rem !important;
+}
+
+.dropdown-item{
+    color:rgba(80, 160, 191, 1);
+    padding: .5rem 1rem !important
+}
+
+.dropdown-item:hover{   
+    text-decoration: overline;
+    background-color: inherit;
+}
+
+a.nav-link.dropdown-item:hover{
+    color: black;
+}
+
+.collapsing {
+    -webkit-transition: height .1s ease;
+    -o-transition: height .1s ease;
+    transition: height .1s ease;
+    }
+
+.dropdown-menu{
+    border: 1px solid rgba(32, 63, 89, 1);
+    border-radius: .25rem;
+    margin: .5rem 1rem;
+    padding: 0;
+}
+
+.fa-blog, .fa-child{
+    opacity: .7;
+}
+
+.fa-level-down-alt{
+    color: whitesmoke;
+    background-color: none !important;
+}
+
+.fa-level-down-alt:hover{
+    color: antiquewhite;
+    box-shadow: 0 0 6px antiquewhite;
+    background-color: none !important;
+}
+
+.footnote{
+	width: 100% !important;
+	height: 5em;
+}
+
+.home-img{
+    background-image: url(/img/Full-Moon.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.Sunday-img{
+    background-image: url(/img/sunflowers-in-field.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.about-img{
+    background-image: url(/img/Softball.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: .5;
+}
+
+.jumbotron{
+    padding: 2rem 2rem !important;
+}
+
+.justify-content-evenly{
+    justify-content: space-evenly !important;
+}
+
+.lead .btn{
+	color: #50a0bf;
+    background-color: #e9ecef;
+}
+
+.lead .btn:hover{
+	background-color: #50a0bf;
+	color: #e9ecef;
+}
+
+.logo{
+    background-image: url('favicon.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 150px;
+}
+
+li.nav-item{
+    padding: 0 0 5px 0;
+}
+
+.nav{
+    flex-wrap: nowrap;
+}
+
+.navbar{
+    transition: all 0.2s ease;
+    height: 5em;
+    padding: 0em 1rem 0rem 1rem;
+    background-color: transparent;
+    border-bottom: 3px solid #2f5476;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+nav.navbar.shrink{
+    transition: all 1.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    height: 4em;
+    background-color: rgba(0,0,0,.9);
+}
+
+nav.navbar.shrink a {
+    font-size: 9pt;
+    transition: all .5s ease-in-out;
+}
+
+nav.navbar.shrink .navbar-brand{
+    height: 5em;
+    transition: all 1.5s ease;
+    margin: 0 !important;
+}
+
+
+nav.navbar.shrink .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    padding: 4px 5px;
+    transition: all 1.5s ease;
+    border-color: transparent;
+}
+
+.navbar-nav{
+    display: flex !important;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 0 5px 0
+}
+
+.nav-link{
+    color:#2f5476 !important;
+    display: inline-block;
+    padding: .5rem 1rem !important;
+    width: 100%;
+}
+
+nav.navbar.shrink .nav-link{
+    font-size: 10pt;
+}
+
+.nav-hover-anim {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-hover-anim:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: rgb(80, 160, 191);
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .nav-hover-anim:hover:before, .nav-hover-anim:focus:before, .nav-hover-anim:active:before {
+    left: 0;
+    right: 0;
+  }
+
+.nav-tabs .nav-link{
+    background-color:rgb(247, 247, 240);
+    color:#2f5476!important;
+}
+
+.nav-tabs .nav-item.active{
+    background-color: rgb(80, 160, 191);
+    color:rgb(247, 247, 240) !important;
+};
+
+div .navbar-nav:hover a:not(:hover){
+    opacity: .5 !important;
+}
+
+.navbar-toggler{
+	position: absolute;
+	right: 0;
+    top: 2rem;
+    background-color: #2f5476;
+}
+
+.navbar-toggler:hover, .navbar-toggler:focus {
+    background-color: #2f5476;
+    opacity: .7;
+}
+
+.navbar-toggler-icon{
+    background-color: #2f5476;
+}
+
+.progress{
+    height: 2rem;
+}
+
+.top-button {
+    color: black;
+    background-color: whitesmoke;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50% 50%;
+    position: fixed;
+    bottom: 0rem;
+    right: 0rem;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.top-button:hover{
+    background-color: #3675ab;
+    color: #f7f7f0;
+    text-decoration: none;
+}
+
+.w-100{
+    max-width: 100%;
+}
+
+
+.search {
+	display: inline-block;
+	position: relative;
+	height: 35px;
+	width: 35px;
+	box-sizing: border-box;
+	margin: 0px 8px 7px 0px;
+	padding: 1px 9px 7px 9px;
+	border: 3px solid #e9ecef;
+	border-radius: 25px;
+	transition: all 200ms ease;
+	cursor: text;
+}
+
+	.search:after {
+		content: "";
+		position: absolute;
+		width: 3px;
+		height: 20px;
+		right: -5px;
+		top: 21px;
+		background: white;
+		border-radius: 3px;
+		transform: rotate(-45deg);
+		transition: all 200ms ease;
+	}
+	
+	.search.active,
+	.search:hover {
+		width: 200px;
+		margin-right: 0px;
+    }
+    
+    .search:hover:after {
+		height: 0px;	
+	}
+
+    .search input {
+        width: 100%;
+        border: none;
+        box-sizing: border-box;
+        font-family: Helvetica;
+        font-size: 15px;
+        color: whitesmoke;
+        background: inherit;
+        outline-width: 0px;
+    }
+
+    .typewriter h1 {
+        color: #fff;
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid white; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3s steps(30, end),
+          blink-caret .5s step-end forwards;
+      }
+
+      .home-button{
+        position: absolute;
+        top: 90%;
+      }
+
+      .home-caption{
+        position: absolute;
+        justify-content: center;
+        top: 75%;
+        left: 0;
+        right:0;
+        width: 100%;
+        text-align: center;
+        color: #09080A;
+        text-decoration: none;;
+      }
+
+      .home-border{
+          padding: 15px;
+          background-color: transparent;
+          text-decoration: none;
+          color: antiquewhite;
+          border: 2px solid whitesmoke;
+          border-radius: 50px;
+      }
+
+      .home-border:hover{
+          color: antiquewhite;
+          box-shadow: 0 0 6px antiquewhite;
+      }
+
+      h2 {margin:2em; letter-spacing:0.2em; color: #EEE}
+.container{
+	margin: 3em auto;
+	width: 90%;
+	text-align: center;
+/* 	font-family: 'Aref Ruqaa', serif; */
+	font-family: 'Ubuntu', sans-serif;
+/* font-family: 'Lato', sans-serif; */
+font-family: 'Source Sans Pro', sans-serif;
+	
+
+}
+.item {
+/* 	background: #FFF; */
+	margin: 2em;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	transform: rotate(45deg);
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	padding:0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	margin: 0 auto;
+}
+.item p {
+	position: absolute;
+	transform: rotate(-45deg);
+	top: 30%;
+	left: -20%;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px 20px;
+	width:130%;
+	text-align:center;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+	
+}
+
+.item:hover {
+	transform: none;
+	transform: scale(1.5);
+	z-index:2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.item:hover > p {
+	transform: none;
+	top: 0;
+	
+}
+.item.tm1 > img {
+    background-size: cover;
+    height: 200px;
+}
+.item:hover > img {
+	transform: none;
+	
+}
+
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color:whitesmoke }
+      }
+
+@media(min-width:992px){
+.dropdown-menu.show{
+    display: flex;
+    flex-direction: row;
+}
+}
+
+    @media(max-width:992px){
+
+.donate-pos{
+  display: flex;
+  height: auto;
+  width: 100%;
+  background-color: #50a0bf;
+}
+
+.dropdown-item{
+   display: flex;
+   justify-content: center;
+   border: none;
+   margin: 0;
+   padding: 0;
+}
+
+.dropdown-menu{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+   background-color: rgb(247, 247, 240);
+}
+
+li.nav-item{
+	    background-color: #f7f7f0;
+}
+
+.navbar-nav{
+     border-radius: 5px 5px 20px 20px;
+}
+
+.navbar-nav .nav-link{
+	background-color:#f7f7f0;
+}
+
+nav.navbar.shrink a{
+	background-color: #f7f7f0;
+}
+}
+/* Color Theme Swatches in Hex */
+.summer-catalog--v05-1-hex { color: #D9BD3C; }
+.summer-catalog--v05-2-hex { color: #FFEA1B; }
+.summer-catalog--v05-3-hex { color: #17E9EE; }
+.summer-catalog--v05-4-hex { color: #06004F; }
+.summer-catalog--v05-5-hex { color: #F4FCE8; }
+
+/* Color Theme Swatches in RGBA */
+.summer-catalog--v05-1-rgba { color: rgba(216, 188, 59, 1); }
+.summer-catalog--v05-2-rgba { color: rgba(255, 233, 26, 1); }
+.summer-catalog--v05-3-rgba { color: rgba(23, 232, 237, 1); }
+.summer-catalog--v05-4-rgba { color: rgba(5, 0, 79, 1); }
+.summer-catalog--v05-5-rgba { color: rgba(244, 251, 232, 1); }
+
+/* Color Theme Swatches in HSLA */
+.summer-catalog--v05-1-hsla { color: hsla(49, 67, 54, 1); }
+.summer-catalog--v05-2-hsla { color: hsla(54, 100, 55, 1); }
+.summer-catalog--v05-3-hsla { color: hsla(181, 86, 51, 1); }
+.summer-catalog--v05-4-hsla { color: hsla(244, 100, 15, 1); }
+.summer-catalog--v05-5-hsla { color: hsla(83, 76, 94, 1); }
+
+/* Color Theme Swatches in Hex */
+.blue-and-orange-sky-in-Alghero-1-hex { color: #275D8C; }
+.blue-and-orange-sky-in-Alghero-2-hex { color: #203F59; }
+.blue-and-orange-sky-in-Alghero-3-hex { color: #50A0BF; }
+.blue-and-orange-sky-in-Alghero-4-hex { color: #F2C744; }
+.blue-and-orange-sky-in-Alghero-5-hex { color: #FFFFFF; }
+
+/* Color Theme Swatches in RGBA */
+.blue-and-orange-sky-in-Alghero-1-rgba { color: rgba(39, 93, 140, 1); }
+.blue-and-orange-sky-in-Alghero-2-rgba { color: rgba(32, 63, 89, 1); }
+.blue-and-orange-sky-in-Alghero-3-rgba { color: rgba(80, 160, 191, 1); }
+.blue-and-orange-sky-in-Alghero-4-rgba { color: rgba(242, 199, 68, 1); }
+.blue-and-orange-sky-in-Alghero-5-rgba { color: rgba(255, 255, 255, 1); }
+
+/* Color Theme Swatches in HSLA */
+.blue-and-orange-sky-in-Alghero-1-hsla { color: hsla(207, 56, 35, 1); }
+.blue-and-orange-sky-in-Alghero-2-hsla { color: hsla(207, 47, 23, 1); }
+.blue-and-orange-sky-in-Alghero-3-hsla { color: hsla(196, 46, 53, 1); }
+.blue-and-orange-sky-in-Alghero-4-hsla { color: hsla(45, 86, 60, 1); }
+.blue-and-orange-sky-in-Alghero-5-hsla { color: hsla(0, 0, 100, 1); }
