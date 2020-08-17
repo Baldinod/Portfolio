@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>This is about me!</title>
+        <link rel="shortcut icon"
+            href=""
+            type="image/x-icon"
+            href="favicon.ico"> <!-- add favicon -->
+        <link rel="icon"
+            href=""
+            type="image/x-icon"
+            href="favicon.ico">
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description"
+            content="ADD DESCRIPTION HERE">
+        <meta name="author"
+            content="Dan B | Danieltbaldino@gmail.com">
+
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+            <link rel="stylesheet" href="css/style.css">          
+            <script src="https://code.jquery.com/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+            <script src="tipuesearch/tipuesearch_content.js"></script>
+            <link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
+            <script src="tipuesearch/tipuesearch_set.js"></script>
+            <script src="tipuesearch/tipuesearch.js"></script>  
+            <style>
+                html,body,section{
+                    background-color: grey !important;
+                }
+            </style>   
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light" data-toggle="shrink">
+            <img src="img/arrow.png"
+                class="navbar-brand py-0 invert"
+                    href="index.html" style="height:inherit"></img>
+            <div class="container w-100 h-100 mt-0 pr-0">
+                <button class="navbar-toggler mr-2"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-flex-end w-100"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 text-center mb-3 mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover-anim"
+                                href="blog-central.html">
+                                Blog Central
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover-anim"
+                                href="#about-myself.html">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item ml-auto w-100">
+                            <a class="nav-link nav-hover-anim"
+                                href="#">
+                                Gallery
+                            </a>
+                        </li>
+                    </ul>
+        </div>
+            </div>
+        </nav>
+        <script>
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('nav').addClass('shrink');
+                } else { 
+                    $('nav').removeClass('shrink');
+                }
+            });
+        </script> 
+         <!--end of Navigation bar-->
+        <section id="top">
+            <div class="container-fluid px-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="img-fluid about-img text-center py-2"></div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container px-0">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <img src="img/Wharton-State-Dbag-Pose.jpg" width="300" height="300">
+                    </div>
+                    <div class="col-md-6 col-md-6 col-lg-6 pt-2">
+                        <h4>Hey, nice to meet you!</h4>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a class="top-button show" href="#top" title="Back to Top">
+            <i class="fa fa-arrow-up align-bottom"></i>
+        </a>
+        <!-- /#wrapper -->
+        <section class="footer">
+            <footer class="w-100">
+                <div class="w-100 text-center position-relative">
+                    <div class="text-center py-4 border-between justify-content-evenly">
+                        <div class="col-align-self-center">
+                            <div class="flex-wrap">
+                                <img src="img/arrow.png" class="navbar-brand"
+                href="index.html" style="height:90px"></img>
+                            </div>
+                        </div>
+                        <div class="col-align-self-center">
+                            <div aria-label="Site navigation">
+                            </div>
+                            <form action="results.html">
+                                    <div class="search">
+                                    <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><button type="submit" style="display:none"></button>
+                                    </div>
+                                    </form>
+                                    <script type="text/javascript">
+                                        document.getElementById('frmSearch').onsubmit = function() {
+                                            window.location = 'http://www.google.com/search?q=site:yoursitename.com ' + document.getElementById('txtSearch').value;
+                                            return false;
+                                        }
+                                    </script>
+                              </div>      
+                        </div>
+                    <div class="footnote text-center">
+                        <div>
+                            <a style="color:black"> &copy; 2020 </a>
+                            <a style="text-decoration:underline" href="index.html">Our Adventure</a>
+                        </div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </section>
+        <!-- Bootstrap 4 JavaScript plugins: JQuery, Popper, Bootstrap.min -->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+            <script>
+                    $(document).ready(function() {
+                         $('#tipue_search_input').tipuesearch({
+                              'show': 20,
+                              'newWindow': true,
+                              'imageZoom': true
+                         });
+                    });
+            </script>
+    </body>
+
+</html>
